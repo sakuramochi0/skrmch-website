@@ -1,3 +1,10 @@
+// Fix the base url for GitHub pages
+const rooterBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/skrmch-website/',
+  }
+} : {}
+
 module.exports = {
   /*
   ** Headers of the page
@@ -35,6 +42,11 @@ module.exports = {
       }
     }
   },
+  /**
+   * Rooter configuration
+   */
+  ...rooterBase,
+
   modules: [
     ['@nuxtjs/google-analytics', { id: 'UA-7053288-2' }],
   ],
