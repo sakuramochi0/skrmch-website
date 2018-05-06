@@ -1,6 +1,7 @@
 # skrmch-website
+[![Build Status](https://travis-ci.org/sakuramochi0/skrmch-website.svg?branch=master)](https://travis-ci.org/sakuramochi0/skrmch-website)
 
-> さくらもちのページ
+> さくらもちのページ (https://skrm.ch/) のソースコード
 
 ## Build Setup
 
